@@ -17,5 +17,11 @@ namespace Patterns
             var director = new Generative.Builder.Director(builderA);
             client.ClientCode(director, builderA);
         }
+
+        public void StartPrototype()
+        {
+            var client = new Generative.Prototype.Client(); 
+            client.ClientCode();
+        }
     }
 }
