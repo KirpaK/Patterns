@@ -23,5 +23,11 @@ namespace Patterns
             var client = new Generative.Prototype.Client(); 
             client.ClientCode();
         }
+
+        public void StartFactory()
+        {
+            var client = new Generative.Factory.Client();
+            client.Main();
+        }
     }
 }
